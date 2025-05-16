@@ -840,6 +840,8 @@ private fun AdvancedMarkerImpl(
                 advancedMarkerOptions.iconView(iconView)
             } else if (pinConfig != null) {
                 advancedMarkerOptions.icon(BitmapDescriptorFactory.fromPinConfig(pinConfig))
+            } else {
+                advancedMarkerOptions.icon(null)
             }
             advancedMarkerOptions.contentDescription(contentDescription)
             advancedMarkerOptions.alpha(alpha)
